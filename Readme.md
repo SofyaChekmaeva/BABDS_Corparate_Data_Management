@@ -12,22 +12,39 @@ RAG-система для поиска и генерации ответов на
 CSV → datasets.json → документы → чанки → TF-IDF индекс → поиск → генератор → UI
 
 ## Структура проекта:
-rag-tutorial/
+
 ├── app/
+
 │   ├── config.py          # Настройки
+
 │   ├── chunker.py         # Нарезка текста
+
 │   ├── retriever.py       # TF-IDF поиск
+
 │   ├── generator.py       # Генерация ответов
+
 │   ├── prompts.py         # Шаблоны ответов
+
 │   └── main.py            # Streamlit UI
+
 ├── scripts/
+
 │   ├── prepare_datasets.py
+
 │   ├── build_index.py
+
 │   └── check_*.py
+
 ├── data/
+
 │   ├── raw/               # Исходные данные
+
 │   ├── processed/         # Чанки
+
 │   └── index/             # TF-IDF индекс
+
 ├── tests/                 # Тесты
+
 ├── doc/                   # Документация
+
 └── homework/              # Отчёт
